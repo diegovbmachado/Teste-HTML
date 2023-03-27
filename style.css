@@ -19,6 +19,8 @@ body {
   h1 {
     margin: 0;
     font-size: 36px;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   form {
@@ -31,22 +33,26 @@ body {
   form p {
     margin: 0;
     font-size: 18px;
+    color: #666;
   }
   
   form label {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
+    color: #444;
   }
   
   form input[type="number"],
   form select {
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
-    padding: 8px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 20px;
     width: 100%;
     margin-bottom: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   form select {
@@ -59,7 +65,7 @@ body {
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 20px;
     transition: background-color 0.3s;
     width: 100%;
@@ -95,20 +101,24 @@ body {
   }
   
   .tip-amount {
-    font-size: 36px;
+    font-size: 48px;
     margin: 0;
-    color: #007bff;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .tip-per-person {
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
-    color: #555;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   .tip-note {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 10px;
-    color: #555;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
   }
   
