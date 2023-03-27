@@ -1,100 +1,96 @@
-/* Estilo geral */
-body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Estilo do cabeçalho */
-  header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 30px;
-  }
-  
-  /* Estilo do formulário */
-  form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  input[type="number"],
-  select {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
-  
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-512.png")
-      no-repeat right center;
-    background-size: 20px;
-    padding-right: 40px;
-  }
-  
-  button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #555;
-  }
-  
-  /* Estilo do resultado */
-  .result {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 30px;
-  }
-  
-  .result h2 {
-    margin-top: 0;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .result p {
-    margin-bottom: 10px;
-    color: #666;
-    font-size: 18px;
-  }
+<style>
+    :root {
+      --primary-color: #ff9800;
+    }
+    
+    body {
+        background-color: #F8F8F8;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    form {
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    button {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #ffab40;
+    }
+
+    input, select {
+      font-size: 16px;
+      padding: 12px;
+      border-radius: 4px;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .error {
+      color: #f44336;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .success {
+      color: #4caf50;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .content {
+      padding: 24px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 16px;
+    }
+
+    .action {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .action button {
+      margin-right: 16px;
+    }
+</style>
