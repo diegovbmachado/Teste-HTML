@@ -1,8 +1,27 @@
-<script>
-  // Seleciona o formulário HTML
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // previne o recarregamento da página
+
+    // Selecionando os valores dos campos do formulário
+    let bill = parseFloat(document.querySelector('#bill').value);
+    let serviceQual = parseFloat(document.querySelector('#serviceQual').value);
+    let people = parseInt(document.querySelector('#people').value);
+
+    // Calculando a gorjeta e o valor total da conta
+    let tipAmount = bill * serviceQual;
+    let totalAmount = bill + tipAmount;
+    let tipAmountPerPerson = tipAmount / people;
+    let totalAmountPerPerson = totalAmount / people;
+
+    // Exibindo os resultados no elemento com id "totalTip"
+    document.querySelector('#totalTip').innerHTML = `
+      <p>Gorjeta por pessoa: R$${tipAmountPerPerson.toFixed(2)}</p>
+      <p>Total por pessoa: R$${totalAmountPerPerson.toFixed(2)}</p>
+    `;
+  });
   const form = document.querySelector('form');
 
-  // Adiciona um listener de evento para o submit do formulário
+
   form.addEventListener('submit', function(event) {
     // Impede o comportamento padrão do formulário
     event.preventDefault();
@@ -31,4 +50,4 @@
     `;
     form.appendChild(resultsDiv);
   });
-</script>
+
